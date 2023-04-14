@@ -1,0 +1,219 @@
+/* * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #323232;
+    background-image: url("/images/IMG_9928.jpeg");
+    background-size: cover;
+} */
+
+
+/* Navbar Styling */
+/* 
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    padding: 15px 0px;
+}
+
+.navTitle {
+    font-size: 45px;
+}
+
+.navLink {
+    font-size: 40px;
+    font-family: 'Fira Sans', sans-serif;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    color: #b0e7b2;
+    cursor: pointer;
+}
+
+.leftNav {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rightNav {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.midNav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* Small Phone Styling */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("/images/Glacier\ 2018\ 1043_Original.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #323232;
+}
+
+nav {
+    display: flex;
+    color: white;
+    align-items: center;
+    width: 100%;
+}
+
+.navLink {
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    color: #b0e7b2;
+}
+
+.leftNav {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rightNav {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navTitle, .midNav {
+    display: none;
+    visibility: none;
+}
+
+/* Styling for headers */
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+/* Styling for Home Page */
+
+.home {
+    padding: 50px 0px 50px 0px;
+}
+
+#welcome {
+    display: none;
+    visibility: none;
+}
+
+#caption {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Styling for projects */
+.proj {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.projLift {
+    margin-top: 20px;
+}
+
+.img {
+    width: 30%;
+    margin: 20px 5px 10px 20px ;
+}
+
+.petCaption {
+    color: white;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.github {
+    color: black;
+    text-decoration: none;
+    background-color: #b0e7b2;
+    padding: 7px 10px;
+    text-align: center;
+    margin: 0px 0px 0px 150px;
+}
+
+/* About styling */
+.about {
+    margin-top: 50px;
+}
+
+p {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    padding: 0px 20px;
+}
+
+h3 {
+    color: white;
+    margin: 20px 0px 10px 15px;
+    text-decoration: underline 1px solid white;
+}
+
+.skills {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+
+/* Styling for the contact section */
+
+.contact {
+    margin-top: 30px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+}
+
+/* End of styling for 360 x 640 phone */
