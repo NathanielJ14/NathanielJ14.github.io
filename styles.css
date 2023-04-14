@@ -1,68 +1,3 @@
-/* * {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-family: 'Fira Sans', sans-serif;
-    background-color: #323232;
-    background-image: url("/images/IMG_9928.jpeg");
-    background-size: cover;
-} */
-
-
-/* Navbar Styling */
-/* 
-nav {
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: white;
-    padding: 15px 0px;
-}
-
-.navTitle {
-    font-size: 45px;
-}
-
-.navLink {
-    font-size: 40px;
-    font-family: 'Fira Sans', sans-serif;
-    border: none;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-}
-
-.navLink:hover {
-    color: #b0e7b2;
-    cursor: pointer;
-}
-
-.leftNav {
-    flex: 1;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.rightNav {
-    flex: 1;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.midNav {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-
-
-
 /* Small Phone Styling */
 * {
     padding: 0;
@@ -77,10 +12,12 @@ body {
 }
 
 nav {
-    display: flex;
     color: white;
     align-items: center;
+    position: fixed;
     width: 100%;
+    top: 0;
+    display: none;
 }
 
 .navLink {
@@ -140,20 +77,34 @@ h2 {
 }
 
 /* Styling for projects */
-.proj {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
 
-.projLift {
+.projBox {
+    display: flex;
+    flex-direction: row;
     margin-top: 20px;
 }
 
-.img {
-    width: 30%;
-    margin: 20px 5px 10px 20px ;
+.projImg, .projCaptions {
+    display: flex;
+    flex-direction: column;
+}
+
+.projImg {
+    flex: 1;
+    width: 90%;
+}
+
+.projCaptions {
+    flex: 2;
+}
+
+.img{
+    margin: 20px auto;
+    width: 70%;
+}
+
+.dbImg {
+    margin-top: 90px;
 }
 
 .petCaption {
@@ -164,17 +115,26 @@ h2 {
 }
 
 .github {
-    color: black;
+    color: white;
     text-decoration: none;
-    background-color: #b0e7b2;
-    padding: 7px 10px;
+    background-color: #b0e7b28c;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 3px 4px #c9c9c9;
     text-align: center;
-    margin: 0px 0px 0px 150px;
+    padding: 10px 0px;
+    width: 40%;
+    margin: 10px auto 20px auto;
+}
+
+.github:hover {
+    background-color: #323232;
+    border: 1px solid #b0e7b2;
+    box-shadow: 0px 3px 4px #b0e7b2;
 }
 
 /* About styling */
 .about {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 p {
@@ -216,11 +176,220 @@ h3 {
     margin: 20px 0px;
 }
 
-/* End of styling for 360 x 640 phone */
+.soc:hover {
+    color: #b0e7b2;
+}
 
-/* Navbar fix for small phones */
-@media only screen and (max-width: 328px) {
+/* End of styling for phone */
+
+@media only screen and (min-width: 340px) {
+    .img {
+        margin-top: 35px;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .img {
+        margin-top: 10px;
+    }
+}
+
+/* Styling for Tables */
+@media only screen and (min-width: 720px) {
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+    
+    .link {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    #caption {
+        font-size: 30px;
+    }
+
+    .home {
+        margin-bottom: 50px;
+    }
+
+    .petCaption {
+        font-size: 25px;
+    }
+
+    .projCaptions {
+        margin-top: 60px;
+    }
+
+    .img {
+        margin-top: 20px;
+    }
+
+    li {
+        font-size: 25px;
+    }
+
+    .about {
+        margin: 60px 0px ;
+    }
+
+    .github {
+        font-size: 25px;
+        width: 30%;
+    }
+}
+
+/* Styling for 1024 */
+@media only screen and (min-width: 1024px) {
+    nav{
+        display: flex;
+    }
+
     .navLink {
-        font-size: 14px;
+        font-size: 30px;
+    }
+
+    .socials {
+        margin: 60px 0px;
+    }
+
+    .petCaption, p, h3, li, .link {
+        font-size: 30px;
+    }
+
+
+    .github:first-of-type {
+        margin-bottom: 150px;
+    }
+
+    .github {
+        margin-top: 20px;
+    }
+
+    .contactP {
+        margin-top: 40px;
+    }
+
+    .home {
+        margin-top: 160px;
+    }
+}
+
+/* Styling for 1366 and up */
+@media only screen and (min-width: 1366px) {
+    .home {
+        margin-bottom: 350px;
+        padding-top: 270px;
+        margin-top: 0px;
+    }
+
+    .navLink {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 70px;
+    }
+
+    .img {
+        width: 70%;
+    }
+
+    .petCaption {
+        font-size: 40px;
+    }
+
+    .github {
+        font-size: 40px;
+    }
+
+    .petCaption, p, h3, li, .link {
+        font-size: 40px;
+    }
+
+    .aboutCaption {
+        margin: 30px 0px;
+    }
+    .skills {
+        margin-bottom: 200px;
+    }
+
+    .about {
+        margin-top: 200px;
+    }
+}
+
+/* Styling for 1440px up */
+@media only screen and (min-width: 1440px) {
+    .projCaptions {
+        margin-top: 100px;
+    }
+}
+
+/* Styling for 1501 and up */
+@media only screen and (min-width: 1501px) {
+    .projCaptions {
+        margin-top: 190px;
+    }
+}
+
+/* Styling for 1560 and up */
+@media only screen and (min-width: 1560px) {
+    .projCaptions {
+        margin-top: 230px;
+    }
+}
+
+/* Styling for 1680 and up */
+@media only screen and (min-width: 1680px) {
+    .projCaptions {
+        margin-top: 260px;
+    }
+}
+
+/* Styling for 1760 and up */
+@media only screen and (min-width: 1760px) {
+    .projCaptions {
+        margin-top: 220px;
+    }
+
+    .projCaptions:last-of-type {
+        margin-top: 300px;
+    }
+}
+
+/* Styling for 1900 and up */
+@media only screen and (min-width: 1900px) {
+    .projCaptions {
+        margin: 0px;
+    }
+
+    .projCaptions:last-of-type {
+        margin: 0px;
+    }
+
+    .one {
+        margin-top: 120px;
+    }
+
+    .two {
+        margin-top: 50px;
+    }
+
+    .petCaption, p, h3, li, .link {
+        font-size: 60px;
+    }
+
+    
+
+    h2 {
+        font-size: 100px;
     }
 }

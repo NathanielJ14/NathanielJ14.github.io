@@ -15,8 +15,8 @@
     <nav>
         <!-- LeftSide -->
         <div class="leftNav">
-            <a class="navLink" href="">Home</a>
-            <a class="navLink" href="">Projects</a>
+            <a class="navLink" href="#home">Home</a>
+            <a class="navLink" href="#projects">Projects</a>
         </div>
         <!-- Middle -->
         <div class="midNav">
@@ -24,36 +24,43 @@
         </div>
         <!-- RightSide -->
         <div class="rightNav"> 
-            <a class="navLink" href="">About</a>
-            <a class="navLink" href="">Contact Me</a>
+            <a class="navLink" href="#about">About</a>
+            <a class="navLink" href="#contact">Contact Me</a>
         </div>
     </nav>
     
-    <div class="home">
+    <div class="home" id="home">
         <h2 id="welcome">Welcome To My Portfolio!</h2>
         <h2>Nathaniel Albert</h2>
         <p id="caption">Software Developer</p>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="projects">
         <h2>Projects</h2>
 
-        <div class="proj">
-            <img class="img" src="/images/Black Pitbull.PNG" alt="Black dog drawing.">
-            <p class="petCaption">This is a pet portrait website I created for my girlfriend. It allows her to display and show off her artwork while letting potential customers contact her directly from the client side.</p>
-        </div>
-        <a class="github" href="https://github.com/NathanielJ14/Pencil-Paws-Pet-Portriats">Github</a>
+        <div class="projBox">
+            <div class="projImg">
+                <img class="img" src="/images/Black Pitbull.PNG" alt="Black dog drawing.">
+                <img class="img dbImg" src="/images/download.png" alt="Kettlebell PNG.">
+            </div>
+            
 
-        <div class="proj projLift">
-            <img class="img" src="/images/download.png" alt="">
-            <p class="petCaption">This is an workout planner application that I created. The app allows you to create, update, and delete different workout plans as well as add individual exercises to each plan.</p>
+            <div class="projCaptions">
+                <div class="one">
+                    <p class="petCaption">This is a pet portrait website I created for my girlfriend. It allows her to display and show off her artwork while letting potential customers contact her directly from the client side.</p> 
+                </div>
+                <a class="github" href="https://github.com/NathanielJ14/Pencil-Paws-Pet-Portriats">Github</a>
+                <div class="two">
+                    <p class="petCaption">This is an workout planner application that I created. The app allows you to create, update, and delete different workout plans as well as add individual exercises to each plan.</p> 
+                </div>
+                <a class="github" href="https://github.com/NathanielJ14/Lifting-Buddy-Project">Github</a>
+            </div>
         </div>
-        <a class="github" href="https://github.com/NathanielJ14/Lifting-Buddy-Project">Github</a>
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
         <h2>About</h2>
-        <p>Hello, I'm Nathan a software developer and creator who loves to create new things. I enjoy developing and designing new projects in addition to learning and implementing new technology.</p>
+        <p class="aboutCaption">Hello, I'm Nathan a software developer and creator who loves to create new things. I enjoy developing and designing new projects in addition to learning and implementing new technology.</p>
         <h3>Top Skills</h3>
         <div class="skills">
             <div>
@@ -63,7 +70,7 @@
                     <li>C#</li>
                     <li>JavaScript</li>
                     <li>HTML</li>
-                    <li>CSSw</li>
+                    <li>CSS</li>
                 </ul>
             </div>
             <div>
@@ -79,14 +86,14 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <h2>Contact Me</h2>
-        <p>You can contact me on any of the following, or look at my work-</p>
+        <p class="contactP">You can contact me on any of the following, or look at my work-</p>
 
         <div class="socials">
-            <a class="link" href="https://www.linkedin.com/in/nathaniel-j-albert/">LinkedIn</a>
-            <a class="link" href="https://github.com/NathanielJ14">Github</a>
-            <a class="link" href="Nathaniel.Albert.Resume.March.2023.pdf" download="Nathaniel.Albert.Resume.March.2023.pdf">Resume</a>
+            <a class="link soc" href="https://www.linkedin.com/in/nathaniel-j-albert/">LinkedIn</a>
+            <a class="link soc" href="https://github.com/NathanielJ14">Github</a>
+            <a class="link soc" href="Nathaniel.Albert.Resume.March.2023.pdf" download="Nathaniel.Albert.Resume.March.2023.pdf">Resume</a>
         </div>
         <p class="link">Email: Nathanielalbert1202@gmail.com</p>
     </div>
