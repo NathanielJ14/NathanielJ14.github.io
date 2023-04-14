@@ -217,3 +217,10 @@ h3 {
 }
 
 /* End of styling for 360 x 640 phone */
+
+/* Navbar fix for small phones */
+@media only screen and (max-width: 328px) {
+    .navLink {
+        font-size: 14px;
+    }
+}
