@@ -4,98 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav>
-        <!-- LeftSide -->
-        <div class="leftNav">
+        <div class="navHeader">
+            <h2 id="name">Nathaniel Albert</h2>
+        </div>
+        <div class="navLinks">
             <a class="navLink" href="#home">Home</a>
-            <a class="navLink" href="#projects">Projects</a>
-        </div>
-        <!-- Middle -->
-        <div class="midNav">
-            <h1 class="navTitle">Nathaniel Albert</h1>
-        </div>
-        <!-- RightSide -->
-        <div class="rightNav"> 
             <a class="navLink" href="#about">About</a>
-            <a class="navLink" href="#contact">Contact Me</a>
+            <a class="navLink" href="#projects">Projects</a>
+            <a class="navLink" href="#contact">Contact</a>
         </div>
     </nav>
-    
+
     <div class="home" id="home">
-        <h2 id="welcome">Welcome To My Portfolio!</h2>
-        <h2>Nathaniel Albert</h2>
-        <p id="caption">Software Developer</p>
+        <h1> <span id="im">I'm a</span> <br> Software <br> Developer <span id="period">.</span> </h1>
+        <a class="btn" href="#contact">Contact Me</a>
+    </div>
+
+    <div class="about" id="about">
+        <h2>About</h2>
+        <p class="aboutCaption">Hello! I'm Nathan, a software developer who loves to create new things. I enjoy developing and designing new projects in addition to learning and implementing new technology.</p>
+        <h3>Top Skills</h3>
+        <div class="skills">
+            <div>
+                <ul>
+                    <li>C#</li>
+                    <li>React</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Git</li>
+                    <li>Flask</li>
+                    <li>Nodejs</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <div class="projects" id="projects">
         <h2>Projects</h2>
 
-        <div class="projBox">
-            <div class="projImg">
-                <img class="img" src="/images/Black Pitbull.PNG" alt="Black dog drawing.">
-                <img class="img dbImg" src="/images/download.png" alt="Kettlebell PNG.">
-            </div>
-            
-
-            <div class="projCaptions">
-                <div class="one">
-                    <p class="petCaption">This is a pet portrait website I created for my girlfriend. It allows her to display and show off her artwork while letting potential customers contact her directly from the client side.</p> 
+        <div>
+            <div class="projectBox">
+                <div class="img">
+                    <img src="/images/Black Pitbull.PNG" alt="Drawing of a black dog.">
                 </div>
-                <a class="github" href="https://github.com/NathanielJ14/Pencil-Paws-Pet-Portriats">Github</a>
-                <div class="two">
-                    <p class="petCaption">This is an workout planner application that I created. The app allows you to create, update, and delete different workout plans as well as add individual exercises to each plan.</p> 
-                </div>
-                <a class="github" href="https://github.com/NathanielJ14/Lifting-Buddy-Project">Github</a>
-            </div>
-        </div>
-    </div>
 
-    <div class="about" id="about">
-        <h2>About</h2>
-        <p class="aboutCaption">Hello, I'm Nathan a software developer and creator who loves to create new things. I enjoy developing and designing new projects in addition to learning and implementing new technology.</p>
-        <h3>Top Skills</h3>
-        <div class="skills">
-            <div>
-                <ul>
-                    <li>React</li>
-                    <li>Python</li>
-                    <li>C#</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
+                <div class="captionProj">
+                    <h4>Pencil Paws Pet Portraits</h4>
+                    <p class="projCaption">This is a pet portrait website I created for my girlfriend. It allows her to display and show off her artwork while letting potential customers contact her directly from the client side.</p> 
+                    <a class="btnProj" href="https://github.com/NathanielJ14/Pencil-Paws-Pet-Portriats">Github</a>
+                </div>
             </div>
-            <div>
-                <ul>
-                    <li>MongoDB</li>
-                    <li>MySQL</li>
-                    <li>Flask</li>
-                    <li>Git</li>
-                    <li>Bootstrap</li>
-                    <li>Nodejs</li>
-                </ul>
+
+            <div class="projectBox">
+                <div class="img">
+                    <img src="/images/download.png" alt="A picture of weights.">
+                </div>
+
+                <div class="captionProj">
+                    <h4>Lifting Buddy</h4>
+                    <p class="projCaption">This is an workout planner application that I created. The app allows you to create, update, and delete different workout plans as well as add individual exercises to each plan.</p> 
+                    <a class="btnProj" href="https://github.com/NathanielJ14/Lifting-Buddy-Project">Github</a>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="contact" id="contact">
         <h2>Contact Me</h2>
-        <p class="contactP">You can contact me on any of the following, or look at my work-</p>
+        <p id="work">You can contact me on any of the following, or look at my work-</p>
 
         <div class="socials">
-            <a class="link soc" href="https://www.linkedin.com/in/nathaniel-j-albert/">LinkedIn</a>
-            <a class="link soc" href="https://github.com/NathanielJ14">Github</a>
-            <a class="link soc" href="Nathaniel.Albert.Resume.March.2023.pdf" download="Nathaniel.Albert.Resume.March.2023.pdf">Resume</a>
+            <a class="link" href="https://www.linkedin.com/in/nathaniel-j-albert/">LinkedIn</a>
+            <a class="link" href="https://github.com/NathanielJ14">Github</a>
+            <a class="link" href="Nathaniel.Albert.Resume.March.2023.pdf" download="Nathaniel.Albert.Resume.March.2023.pdf">Resume</a>
         </div>
-        <p class="link">Email: Nathanielalbert1202@gmail.com</p>
+        <p class="email"><span class="eml">Email:</span>  Nathanielalbert1202@gmail.com | <span class="eml">Phone:</span>  1-814-449-9353</p>
     </div>
 
 </body>

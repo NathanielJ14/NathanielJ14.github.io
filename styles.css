@@ -1,395 +1,463 @@
-/* Small Phone Styling */
 * {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-image: url("/images/Glacier\ 2018\ 1043_Original.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #323232;
+    font-family: 'Prompt', sans-serif;
+    background-color: rgb(32, 31, 31);
 }
 
+/* Styling for Navbar */
 nav {
+    display: flex;
     color: white;
-    align-items: center;
     position: fixed;
     width: 100%;
+    align-items: center;
     top: 0;
-    display: none;
+    background-color: rgb(32, 31, 31);
+}
+
+.navLinks {
+    flex: 2;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .navLink {
-    font-size: 16px;
-    font-family: 'Fira Sans', sans-serif;
-    border: none;
     color: white;
-    padding: 10px;
     text-decoration: none;
+    font-size: 20px;
+    margin: 0px 40px 0px 40px;
+}
+
+.navHeader {
+    flex: 1;
+    margin: 20px 0px 0px 50px;
+}
+
+#name {
+    font-size: 50px;
 }
 
 .navLink:hover {
-    color: #b0e7b2;
+    color: #ff664b;
+    transition: ease-in .2s;
 }
 
-.leftNav {
-    flex: 1;
-    display: flex;
-    justify-content: space-evenly;
-}
+/* Home Page Styling */
 
-.rightNav {
-    flex: 1;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.navTitle, .midNav {
-    display: none;
-    visibility: none;
-}
-
-/* Styling for headers */
-
-h2 {
-    font-size: 25px;
-    text-align: center;
-    margin-top: 20px;
+h1 {
     color: white;
+    font-size: 90px;
+    letter-spacing: 5px;
 }
 
-/* Styling for Home Page */
+#im {
+    color: rgb(68, 67, 67);
+}
+
+#period {
+    color: #ff664b;
+}
 
 .home {
-    padding: 50px 0px 50px 0px;
-}
-
-#welcome {
-    display: none;
-    visibility: none;
-}
-
-#caption {
-    color: white;
-    text-align: center;
-    margin-top: 10px;
-}
-
-/* Styling for projects */
-
-.projBox {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-}
-
-.projImg, .projCaptions {
-    display: flex;
-    flex-direction: column;
-}
-
-.projImg {
-    flex: 1;
     width: 90%;
+    margin: 0px auto 0px auto;
+    padding-top: 230px;
 }
 
-.projCaptions {
-    flex: 2;
-}
-
-.img{
-    margin: 20px auto;
-    width: 70%;
-}
-
-.dbImg {
-    margin-top: 90px;
-}
-
-.petCaption {
-    color: white;
-    font-size: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.github {
+.btn {
     color: white;
     text-decoration: none;
-    background-color: #b0e7b28c;
-    border: 1px solid #ffffff;
-    box-shadow: 0px 3px 4px #c9c9c9;
-    text-align: center;
-    padding: 10px 0px;
-    width: 40%;
-    margin: 10px auto 20px auto;
+    background-color: #ff664b;
+    padding: 5px 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border: 2px solid black;
 }
 
-.github:hover {
-    background-color: #323232;
-    border: 1px solid #b0e7b2;
-    box-shadow: 0px 3px 4px #b0e7b2;
+.btn:hover {
+    background-color: rgb(32, 31, 31);
+    color: #ff664b;
+    border: 2px solid #ff664b;
 }
 
-/* About styling */
-.about {
-    margin-top: 10px;
-}
 
-p {
+/* Styling for About Page */
+
+h2 {
     color: white;
+    font-size: 50px;
     text-align: center;
-    margin-top: 15px;
-    padding: 0px 20px;
+    text-decoration: underline 2px #ff664b;
+    text-underline-offset: 5px;
+}
+
+.about {
+    padding-top: 100px;
+}
+
+.aboutCaption {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0px 50px 0px;
 }
 
 h3 {
+    color: #ff664b;
+    font-size: 40px;
+    text-align: center;
+}
+
+li {
     color: white;
-    margin: 20px 0px 10px 15px;
-    text-decoration: underline 1px solid white;
+    font-size: 30px;
+    list-style: none;
+    margin: 20px;
+    text-align: center;
 }
 
 .skills {
-    color: white;
     display: flex;
+    width: 50%;
+    margin: 30px auto;
     justify-content: space-evenly;
-    margin-top: 10px;
+}
+
+li:hover {
+    color: #ff664b;
 }
 
 
-/* Styling for the contact section */
+/* Styling for Projects */
 
-.contact {
-    margin-top: 30px;
+.projects {
+    padding-top: 100px;
 }
 
-.link {
+h4 {
+    color: #ff664b;
+    font-size: 40px;
+}
+
+.img {
+    width: 30%;
+    margin: 40px 0px 0px 0px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.captionProj {
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.projCaption {
     color: white;
-    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px 8px;
+}
 
+.projectBox {
+    display: flex;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.btnProj {
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    background-color: rgb(32, 31, 31);
+    color: #ff664b;
+    border: 2px solid #ff664b;
+}
+
+.btnProj:hover {
+    background-color: #ff664b;
+    color: white;
+    border: 2px solid black;
+}
+
+
+/* Styling for the contact page */
+.contact {
+    padding-top: 100px;
+}
+
+#work {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .socials {
     display: flex;
     justify-content: space-evenly;
-    margin: 20px 0px;
+    width: 60%;
+    margin: 0px auto;
 }
 
-.soc:hover {
-    color: #b0e7b2;
+.link {
+    color: #ff664b;
+    font-size: 30px;
+    text-decoration: none;
 }
 
-/* End of styling for phone */
+.email {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin: 50px 0px 40px 0px;
+}
 
-@media only screen and (min-width: 340px) {
-    .img {
-        margin-top: 35px;
+.eml {
+    color: #ff664b;
+}
+
+.link:hover {
+    color: white;
+    text-decoration: underline 2px solid #ff664b;
+    text-underline-offset: 4px;
+}
+
+
+/* End of main styling */
+
+/* Start of  laptop styling*/
+
+@media only screen and (max-width: 1261px) {
+
+    #name {
+        font-size: 35px;
+    }
+
+    .navLink {
+        font-size: 25px;
+        margin: 0px 20px;
     }
 }
 
-@media only screen and (min-width: 400px) {
-    .img {
-        margin-top: 10px;
+/* Styling for Tablets */
+@media only screen and (max-width: 900px) {
+
+    #name {
+        font-size: 30px;
+    }
+
+    .navLink {
+        font-size: 20px;
+        margin: 0px 20px;
+    }
+
+    .projCaption {
+        font-size: 20px;
     }
 }
 
-/* Styling for Tables */
-@media only screen and (min-width: 720px) {
-    h2 {
+@media only screen and (max-width: 776px) {
+
+    #name {
+        font-size: 25px;
+    }
+
+    .navLink {
+        font-size: 18px;
+        margin: 0px 20px;
+    }
+
+    .projCaption {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 679px) {
+    .navLink {
+        margin: 0px 10px;
+    }
+
+    .aboutCaption {
+        padding: 0px 10px;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 655px) {
+    #name {
+        font-size: 20px;
+    }
+
+    .navLink {
+        font-size: 15;
+    }
+
+    .projCaption {
+        font-size: 15px;
+    }
+}
+
+/* Styling for phones */
+
+@media only screen and (max-width: 612px) {
+    h1 {
+        font-size: 70px;
+    }
+
+    nav {
+        visibility: none;
+        display: none;
+    }
+    
+    img {
+        visibility: none;
+        display: none;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .projCaption {
+        font-size: 25px;
+        padding: 0px;
+    }
+
+    .captionProj {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .about {
+        padding-top: 180px;
+    }
+
+    .email {
+        font-size: 18px;
+    }
+
+    .link {
+        margin: 0px 35px;
+    }
+
+    .projects {
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 541px) {
+    li {
+        font-size: 25px;
+    }
+    .email {
+        margin: 50px 10px;
+    }
+}
+
+@media only screen and (max-width: 505px) {
+    #work {
+        font-size: 25px;
+    }
+
+    .link {
+        margin: 0px 15px;
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+}
+
+@media only screen and (max-width: 440px) {
+    li {
+        margin: 10px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    h1 {
         font-size: 50px;
+    }
+
+    .about {
+        padding-top: 290px;
+    }
+
+    #work {
+        font-size: 20px;
+    }
+
+    .projCaption {
+        font-size: 20px;
+    }
+
+    .aboutCaption {
+        font-size: 20px;
+    }
+
+    .link {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 405px) {
+    h4 {
+        font-size: 25px;
     }
 
     h3 {
         font-size: 30px;
     }
-    
-    .link {
-        font-size: 25px;
-    }
+}
 
-    p {
-        font-size: 25px;
-    }
-
-    #caption {
-        font-size: 30px;
-    }
-
-    .home {
-        margin-bottom: 50px;
-    }
-
-    .petCaption {
-        font-size: 25px;
-    }
-
-    .projCaptions {
-        margin-top: 60px;
-    }
-
-    .img {
-        margin-top: 20px;
-    }
-
-    li {
-        font-size: 25px;
+@media only screen and (max-width: 369px) {
+    h1 {
+        font-size: 40px;
     }
 
     .about {
-        margin: 60px 0px ;
-    }
-
-    .github {
-        font-size: 25px;
-        width: 30%;
-    }
-}
-
-/* Styling for 1024 */
-@media only screen and (min-width: 1024px) {
-    nav{
-        display: flex;
-    }
-
-    .navLink {
-        font-size: 30px;
-    }
-
-    .socials {
-        margin: 60px 0px;
-    }
-
-    .petCaption, p, h3, li, .link {
-        font-size: 30px;
-    }
-
-
-    .github:first-of-type {
-        margin-bottom: 150px;
-    }
-
-    .github {
-        margin-top: 20px;
-    }
-
-    .contactP {
-        margin-top: 40px;
-    }
-
-    .home {
-        margin-top: 160px;
-    }
-}
-
-/* Styling for 1366 and up */
-@media only screen and (min-width: 1366px) {
-    .home {
-        margin-bottom: 350px;
-        padding-top: 270px;
-        margin-top: 0px;
-    }
-
-    .navLink {
-        font-size: 35px;
+        padding-top: 320px;
     }
 
     h2 {
-        font-size: 70px;
-    }
-
-    .img {
-        width: 70%;
-    }
-
-    .petCaption {
-        font-size: 40px;
-    }
-
-    .github {
-        font-size: 40px;
-    }
-
-    .petCaption, p, h3, li, .link {
         font-size: 40px;
     }
 
     .aboutCaption {
-        margin: 30px 0px;
-    }
-    .skills {
-        margin-bottom: 200px;
+        padding: 0;
     }
 
-    .about {
-        margin-top: 200px;
+    .projects {
+        padding-top: 120px;
     }
 }
 
-/* Styling for 1440px up */
-@media only screen and (min-width: 1440px) {
-    .projCaptions {
-        margin-top: 100px;
-    }
-}
-
-/* Styling for 1501 and up */
-@media only screen and (min-width: 1501px) {
-    .projCaptions {
-        margin-top: 190px;
-    }
-}
-
-/* Styling for 1560 and up */
-@media only screen and (min-width: 1560px) {
-    .projCaptions {
-        margin-top: 230px;
-    }
-}
-
-/* Styling for 1680 and up */
-@media only screen and (min-width: 1680px) {
-    .projCaptions {
-        margin-top: 260px;
-    }
-}
-
-/* Styling for 1760 and up */
-@media only screen and (min-width: 1760px) {
-    .projCaptions {
-        margin-top: 220px;
-    }
-
-    .projCaptions:last-of-type {
-        margin-top: 300px;
-    }
-}
-
-/* Styling for 1900 and up */
-@media only screen and (min-width: 1900px) {
-    .projCaptions {
-        margin: 0px;
-    }
-
-    .projCaptions:last-of-type {
-        margin: 0px;
-    }
-
-    .one {
-        margin-top: 120px;
-    }
-
-    .two {
-        margin-top: 50px;
-    }
-
-    .petCaption, p, h3, li, .link {
-        font-size: 60px;
-    }
-
-    
-
-    h2 {
-        font-size: 100px;
+@media only screen and (max-width: 339px) {
+    h4 {
+        font-size: 23px;
     }
 }
