@@ -67,6 +67,21 @@ h1 {
     width: 90%;
     margin: 0px auto 0px auto;
     padding-top: 230px;
+    display: flex;
+    
+}
+
+.me {
+    width: 60%;
+    
+}
+
+.homeRight {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 50%;
+    
 }
 
 .btn {
@@ -253,6 +268,15 @@ img {
         font-size: 25px;
         margin: 0px 20px;
     }
+
+    .me {
+        display: none;
+        visibility: hidden;
+    }
+
+    .homeRight {
+        display: none;
+    }
 }
 
 /* Styling for Tablets */
@@ -324,9 +348,14 @@ img {
         font-size: 70px;
     }
 
-    nav {
+    .navLinks {
         visibility: none;
         display: none;
+    }
+
+    #name {
+        font-size: 40px;
+        text-align: left;
     }
     
     img {
@@ -363,6 +392,8 @@ img {
     .projects {
         padding-top: 0px;
     }
+
+
 }
 
 @media only screen and (max-width: 541px) {
@@ -430,6 +461,10 @@ img {
     }
 
     h3 {
+        font-size: 30px;
+    }
+
+    #name {
         font-size: 30px;
     }
 }
