@@ -122,6 +122,11 @@ h2 {
     margin: 20px 0px 50px 0px;
 }
 
+.cap {
+    width: 70%;
+    margin: 10px auto 50px auto;
+}
+
 h3 {
     color: #ff664b;
     font-size: 40px;
@@ -370,6 +375,10 @@ img {
     .projCaption {
         font-size: 25px;
         padding: 0px;
+    }
+
+    .cap {
+        width: 90%;
     }
 
     .captionProj {
