@@ -1,509 +1,75 @@
 * {
-    padding: 0;
-    margin: 0;
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Prompt', sans-serif;
-    background-color: rgb(32, 31, 31);
 }
-
-/* Styling for Navbar */
-nav {
-    display: flex;
-    color: white;
-    position: fixed;
-    width: 100%;
-    align-items: center;
-    top: 0;
-    background-color: rgb(32, 31, 31);
-}
-
-.navLinks {
-    flex: 2;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.navLink {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    margin: 0px 40px 0px 40px;
-}
-
-.navHeader {
-    flex: 1;
-    margin: 20px 0px 0px 50px;
-}
-
-#name {
-    font-size: 50px;
-}
-
-.navLink:hover {
-    color: #ff664b;
-    transition: ease-in .2s;
-}
-
-/* Home Page Styling */
 
 h1 {
     color: white;
-    font-size: 90px;
-    letter-spacing: 5px;
+
 }
 
-#im {
-    color: rgb(68, 67, 67);
+.orange {
+    color: rgb(255, 89, 0);
 }
 
-#period {
-    color: #ff664b;
-}
-
-.home {
-    width: 90%;
-    margin: 0px auto 0px auto;
-    padding-top: 230px;
-    display: flex;
-    
-}
-
-.me {
-    width: 60%;
-    
-}
-
-.homeRight {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    width: 50%;
-    
-}
-
-.btn {
+.contact {
     color: white;
-    text-decoration: none;
-    background-color: #ff664b;
-    padding: 5px 20px;
-    font-size: 15px;
-    letter-spacing: 2px;
-    border: 2px solid black;
+    background-color: rgb(255, 89, 0);
 }
 
-.btn:hover {
-    background-color: rgb(32, 31, 31);
-    color: #ff664b;
-    border: 2px solid #ff664b;
+.contact:hover {
+    color: rgb(255, 89, 0);
+    border: 1px rgb(255, 89, 0) solid;
 }
 
+.aboutHead {
+    color: rgb(255, 89, 0);
+}
 
-/* Styling for About Page */
-
-h2 {
+.aboutCap {
     color: white;
-    font-size: 50px;
-    text-align: center;
-    text-decoration: underline 2px #ff664b;
-    text-underline-offset: 5px;
-}
-
-.about {
-    padding-top: 100px;
-}
-
-.aboutCaption {
-    color: white;
-    font-size: 24px;
-    text-align: center;
-    margin: 20px 0px 50px 0px;
-}
-
-.cap {
-    width: 70%;
-    margin: 10px auto 50px auto;
-}
-
-h3 {
-    color: #ff664b;
-    font-size: 40px;
-    text-align: center;
 }
 
 li {
     color: white;
-    font-size: 30px;
+}
+
+ul {
     list-style: none;
-    margin: 20px;
-    text-align: center;
 }
 
-.skills {
-    display: flex;
-    width: 50%;
-    margin: 30px auto;
-    justify-content: space-evenly;
+h3 {
+    color: rgb(255, 89, 0);
 }
-
-li:hover {
-    color: #ff664b;
-}
-
-
-/* Styling for Projects */
 
 .projects {
-    padding-top: 100px;
-}
-
-h4 {
-    color: #ff664b;
-    font-size: 40px;
-}
-
-.img {
-    width: 30%;
-    margin: 40px 0px 0px 0px;
-}
-
-img {
-    width: 100%;
-    border-radius: 5%;
-}
-
-.captionProj {
-    width: 70%;
-    margin: 0px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-.projCaption {
     color: white;
-    font-size: 30px;
-    text-align: center;
-    padding: 0px 8px;
+    border: 1px rgb(80, 78, 77) solid;
 }
 
-.projectBox {
-    display: flex;
-    width: 90%;
-    margin: 0px auto;
+.title {
+    color: rgb(255, 89, 0);
 }
 
-.btnProj {
-    text-decoration: none;
-    padding: 10px 30px;
-    font-size: 20px;
-    letter-spacing: 2px;
-    margin-top: 30px;
-    background-color: rgb(32, 31, 31);
-    color: #ff664b;
-    border: 2px solid #ff664b;
-}
-
-.btnProj:hover {
-    background-color: #ff664b;
+.button {
+    background-color: rgb(255, 89, 0);
     color: white;
-    border: 2px solid black;
 }
 
-
-/* Styling for the contact page */
-.contact {
-    padding-top: 100px;
+.button:hover {
+    color: rgb(255, 89, 0);
+    border: 1px rgb(255, 89, 0) solid;
 }
 
-#work {
+.conbutton {
+    color: rgb(255, 89, 0);
+    border: 1px rgb(255, 89, 0) solid;
+}
+
+.conbutton:hover {
+    background-color: rgb(255, 89, 0);
     color: white;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
-
-.socials {
-    display: flex;
-    justify-content: space-evenly;
-    width: 60%;
-    margin: 0px auto;
-}
-
-.link {
-    color: #ff664b;
-    font-size: 30px;
-    text-decoration: none;
-}
-
-.email {
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    margin: 50px 0px 40px 0px;
-}
-
-.eml {
-    color: #ff664b;
-}
-
-.link:hover {
-    color: white;
-    text-decoration: underline 2px solid #ff664b;
-    text-underline-offset: 4px;
-}
-
-
-/* End of main styling */
-
-/* Start of  laptop styling*/
-
-@media only screen and (max-width: 1261px) {
-
-    #name {
-        font-size: 35px;
-    }
-
-    .navLink {
-        font-size: 25px;
-        margin: 0px 20px;
-    }
-
-    .me {
-        display: none;
-        visibility: hidden;
-    }
-
-    .homeRight {
-        display: none;
-    }
-}
-
-/* Styling for Tablets */
-@media only screen and (max-width: 900px) {
-
-    #name {
-        font-size: 30px;
-    }
-
-    .navLink {
-        font-size: 20px;
-        margin: 0px 20px;
-    }
-
-    .projCaption {
-        font-size: 20px;
-    }
-}
-
-@media only screen and (max-width: 776px) {
-
-    #name {
-        font-size: 25px;
-    }
-
-    .navLink {
-        font-size: 18px;
-        margin: 0px 20px;
-    }
-
-    .projCaption {
-        font-size: 20px;
-    }
-
-    h4 {
-        font-size: 30px;
-    }
-}
-
-@media only screen and (max-width: 679px) {
-    .navLink {
-        margin: 0px 10px;
-    }
-
-    .aboutCaption {
-        padding: 0px 10px;
-        font-size: 25px;
-    }
-}
-
-@media only screen and (max-width: 655px) {
-    #name {
-        font-size: 20px;
-    }
-
-    .navLink {
-        font-size: 15;
-    }
-
-    .projCaption {
-        font-size: 15px;
-    }
-}
-
-/* Styling for phones */
-
-@media only screen and (max-width: 612px) {
-    h1 {
-        font-size: 70px;
-    }
-
-    .navLinks {
-        visibility: none;
-        display: none;
-    }
-
-    #name {
-        font-size: 40px;
-        text-align: left;
-    }
-    
-    img {
-        visibility: none;
-        display: none;
-    }
-
-    .img {
-        display: none;
-    }
-
-    .projCaption {
-        font-size: 25px;
-        padding: 0px;
-    }
-
-    .cap {
-        width: 90%;
-    }
-
-    .captionProj {
-        width: 100%;
-        padding-top: 20px;
-    }
-
-    .about {
-        padding-top: 180px;
-    }
-
-    .email {
-        font-size: 18px;
-    }
-
-    .link {
-        margin: 0px 35px;
-    }
-
-    .projects {
-        padding-top: 0px;
-    }
-
-
-}
-
-@media only screen and (max-width: 541px) {
-    li {
-        font-size: 25px;
-    }
-    .email {
-        margin: 50px 10px;
-    }
-}
-
-@media only screen and (max-width: 505px) {
-    #work {
-        font-size: 25px;
-    }
-
-    .link {
-        margin: 0px 15px;
-        font-size: 25px;
-    }
-
-    h1 {
-        font-size: 60px;
-    }
-
-}
-
-@media only screen and (max-width: 440px) {
-    li {
-        margin: 10px;
-        font-size: 20px;
-    }
-}
-
-@media only screen and (max-width: 428px) {
-    h1 {
-        font-size: 50px;
-    }
-
-    .about {
-        padding-top: 290px;
-    }
-
-    #work {
-        font-size: 20px;
-    }
-
-    .projCaption {
-        font-size: 20px;
-    }
-
-    .aboutCaption {
-        font-size: 20px;
-    }
-
-    .link {
-        font-size: 20px;
-    }
-
-}
-
-@media only screen and (max-width: 405px) {
-    h4 {
-        font-size: 25px;
-    }
-
-    h3 {
-        font-size: 30px;
-    }
-
-    #name {
-        font-size: 30px;
-    }
-}
-
-@media only screen and (max-width: 369px) {
-    h1 {
-        font-size: 40px;
-    }
-
-    .about {
-        padding-top: 320px;
-    }
-
-    h2 {
-        font-size: 40px;
-    }
-
-    .aboutCaption {
-        padding: 0;
-    }
-
-    .projects {
-        padding-top: 120px;
-    }
-}
-
-@media only screen and (max-width: 339px) {
-    h4 {
-        font-size: 23px;
-    }
-}
-
-/* End of Mobile Sizes */
