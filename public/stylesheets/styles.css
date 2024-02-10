@@ -3,6 +3,7 @@
 }
 
 body {
+    height: 100%;
     animation: fadeInAnimation ease 3s;
     font-family: 'Prompt', sans-serif;
     animation-iteration-count: 1;
