@@ -10,6 +10,7 @@ body {
     animation-fill-mode: forwards;
 }
 
+/* Fade in on page load animation */
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -88,6 +89,7 @@ h3 {
     color: white;
 }
 
+/* Styling for particle.js */
 #particles-js {
     position: fixed;
     width: 100%;
@@ -97,6 +99,7 @@ h3 {
     left: 0;
 }
 
+/* More fadeIn animation styling */
 @keyframes fadeIn {
     from {
         opacity: 0;
